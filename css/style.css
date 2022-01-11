@@ -1,0 +1,87 @@
+h1{
+    text-align: center;
+}
+
+nav{
+    background-color: black;
+    text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+nav li{
+    padding: 10px 0;
+}
+  
+nav a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+  
+nav a:hover { 
+    text-decoration: underline;
+}
+
+main{
+    margin: 20px;
+    text-align: center;
+}
+
+.text-box{
+    text-transform: uppercase;
+    background: url('../img/home.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+.text-box h3{
+    background: rgba(255, 255, 255, .8);
+    padding: 40px 0;
+}
+
+main ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+main li::before{
+    content:'\2605\00a0';
+}
+
+main li::after{
+    content:'\00a0\2605';
+}
+
+.home h2::after{
+    content:'\2198';
+}
+
+.img-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5px;
+}
+
+.img-box img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
